@@ -7,6 +7,9 @@ public class S_CharacterController : MonoBehaviour {
     public float m_JumpForce = 500.0f;
 
 	void Start () {
+
+        
+
         m_Transform = GetComponent<Transform>();
         m_Rb2d = GetComponent<Rigidbody2D>();
 	}
@@ -30,7 +33,7 @@ public class S_CharacterController : MonoBehaviour {
        
 
         // Collide with Boat
-        if( !m_IsGrounded && (  collision.collider.gameObject.layer == 9 ) )
+        if( !m_IsGrounded && ( collision.collider.gameObject.layer == 9 ) )
         {
             m_Rb2d.velocity = Vector3.zero;
             m_IsGrounded = true;
