@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50b5940059da624f8b8b9e2b11650fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nextScene: MainScene
   m_MainMenu: {fileID: 1938063431}
   m_SelectPlayer: {fileID: 916334220}
   m_Credits: {fileID: 1963745841}
