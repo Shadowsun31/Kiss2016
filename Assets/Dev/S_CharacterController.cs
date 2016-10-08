@@ -30,7 +30,7 @@ public class S_CharacterController : MonoBehaviour {
        
 
         // Collide with Boat
-        if( !m_IsGrounded && collision.collider.gameObject.layer == 9 )
+        if( !m_IsGrounded && (  collision.collider.gameObject.layer == 9 ) )
         {
             m_Rb2d.velocity = Vector3.zero;
             m_IsGrounded = true;

@@ -35,7 +35,13 @@ public class S_AIController : MonoBehaviour {
                 m_MoveX = Random.Range( 0, 1.0f );
             }
         }
-                
+
+        if( m_IsGrounded && m_JumpTimer <= m_Time )
+        {
+            m_JumpTimer = m_Time + Random.Range( 15f, 35f );
+            m_Jump = true;
+        }
+
 
         float XMovement = m_MoveX * m_Speed * Time.deltaTime;
 
@@ -77,6 +83,7 @@ public class S_AIController : MonoBehaviour {
     private float m_Time;
 
     private float m_MoveTimer;
+    private float m_JumpTimer;
 
     private bool m_Jump = false;
 
