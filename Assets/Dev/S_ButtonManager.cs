@@ -5,9 +5,14 @@ using UnityEngine.UI;
 public class S_ButtonManager : MonoBehaviour
 {
 
+    public string nextScene;
     public GameObject m_MainMenu, m_SelectPlayer, m_Credits;
 
     public Button m_StartGameButton;
+
+
+    public Text[] m_Texts;
+
 
     #region MainMenu
 
@@ -31,6 +36,14 @@ public class S_ButtonManager : MonoBehaviour
     #endregion
 
   
+    void Start()
+    {
+        for(int i = 0;i< GameData.PlayerMax;i++ )
+        {
+            GameData.singleton.playerInput[ i ] = -1;
+        }
+       
+    }
 
     void Update()
     {
@@ -44,10 +57,22 @@ public class S_ButtonManager : MonoBehaviour
 
             }
 
-            if( Input.GetButtonDown( "Submit" ) )
+            for( int i = 0; i < 4; i++ )
             {
-                // Add a player
+                if( Input.GetButtonDown( "Joy" + ( i + 1 ) + "_ButA" ) )
+                {
+                    GameData.singleton.playerInput[i] = i;
+                    
+                    m_Texts[ i ].text = "Player" + ( i + 1 );
+                }
             }
+            
+            if(Input.GetKey(KeyCode.Joystick1Button7)|| Input.GetKey( KeyCode.Joystick2Button7 ) || Input.GetKey( KeyCode.Joystick3Button7 ) || Input.GetKey( KeyCode.Joystick4Button7 ) )
+            {
+                SceneLoader.singleton.changeScene( nextScene );
+            }
+
+            
         }
 
         if( m_Credits.activeInHierarchy )
