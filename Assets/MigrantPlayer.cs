@@ -12,6 +12,9 @@ public class MigrantPlayer : Migrant {
     [SerializeField]
     private float deplacement;
 
+    [SerializeField]
+    private SpriteRenderer arrow;
+
 
     [SerializeField]
     private new Rigidbody2D rigidbody2D;
@@ -45,6 +48,24 @@ public class MigrantPlayer : Migrant {
     public void SetNumPlayer(int playerNum)
     {
         this.playerNum = playerNum;
+
+        if (playerNum == 0)
+        {
+            arrow.color = Color.green;
+        }
+        else if (playerNum == 1)
+        {
+            arrow.color = Color.red;
+        }
+        else if (playerNum == 2)
+        {
+            arrow.color = Color.yellow;
+        }
+        else if (playerNum == 3)
+        {
+            arrow.color = Color.blue;
+        }
+
     }
 
     public override void Die()
