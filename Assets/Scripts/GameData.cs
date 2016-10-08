@@ -51,6 +51,12 @@ public class GameData {
     {
         nbrDeadMigrant = 0;
         nbrMigrantTotal = 0;
+        for (int i = 0; i < PlayerMax; i++)
+        {
+            if(playerInput[i] != -1)
+                playerAlive[i] = true;
+        }
+
     }
 
 }
