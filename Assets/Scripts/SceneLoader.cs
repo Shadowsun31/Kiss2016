@@ -33,27 +33,29 @@ public class SceneLoader : MonoBehaviour {
         float startTime = Time.time;
         float normTime = 0;
 
-        while(normTime < 1)
+        fadeImage.enabled = true;
+        while (normTime < 1)
         {
             normTime = (Time.time - startTime) / duration;
             fadeImage.color = Color.Lerp(Color.clear, Color.black, normTime);
             yield return null;
         }
-
         SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
     }
 
     IEnumerator IntroFade()
     {
+        fadeImage.enabled = true;
         float startTime = Time.time;
         float normTime = 0;
 
         while (normTime < 1)
         {
             normTime = (Time.time - startTime) / duration;
-            fadeImage.color = Color.Lerp(Color.grey, Color.clear, normTime);
+            fadeImage.color = Color.Lerp(Color.black, Color.clear, normTime);
             yield return null;
         }
+        fadeImage.enabled = false;
         onFinishFade.Invoke();
     }
 
