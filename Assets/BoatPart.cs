@@ -3,6 +3,9 @@ using System.Collections;
 
 public class BoatPart : MonoBehaviour {
 
+    public BoatPart leftBoat;
+    public BoatPart rightBoat;
+
     private new Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
 

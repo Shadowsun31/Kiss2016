@@ -6,44 +6,25 @@ public class MigrantPlayer : Migrant {
     [SerializeField]
     private int playerNum;
 
-    [SerializeField]
-    private float jump;
-
-    [SerializeField]
-    private float deplacement;
 
     [SerializeField]
     private SpriteRenderer arrow;
 
 
-    [SerializeField]
-    private new Rigidbody2D rigidbody2D;
-
-    private bool isJumping = false;
-	
-	// Update is called once per frame
-	void Update () {
-        
-        if (Input.GetButton("Joy"+(playerNum+1) + "_ButA"))
-        {
-            if (!isJumping)
-            {
-                isJumping = true;
-                StartCoroutine(jumpIenum());
-            }
-        }
-
-        rigidbody2D.AddForce(new Vector2(Input.GetAxisRaw("Joy" + (playerNum + 1) + "_Horizontal")*deplacement, 0), ForceMode2D.Force);
-
-    }
-
-    public IEnumerator jumpIenum()
+    public override void Start()
     {
-        rigidbody2D.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
-        yield return new WaitForSeconds(1);
-        isJumping = false;
-
+        base.Start();
+        arrow.enabled = true;
     }
+
+    public override void Update()
+    {
+        pressJump = Input.GetButton("Joy" + (playerNum + 1) + "_ButA");
+        direction = Input.GetAxisRaw("Joy" + (playerNum + 1) + "_Horizontal");
+
+        base.Update();
+    }
+
 
     public void SetNumPlayer(int playerNum)
     {
