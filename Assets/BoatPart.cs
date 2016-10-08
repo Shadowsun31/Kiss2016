@@ -6,12 +6,25 @@ public class BoatPart : MonoBehaviour {
     private new Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
 
+    private FixedJoint2D joint;
+
     public float force;
+    public float forceWave;
+
+    public float minTimeToBreak = 10;
+    public float maxTimeToBreak = 180;
+
+    private float timeToBreak;
+
+    private float startTime;
 
 	// Use this for initialization
 	void Start () {
+        startTime = Time.time;
+        timeToBreak = Random.Range(minTimeToBreak, maxTimeToBreak) + startTime;
         rigidbody2d = GetComponent<Rigidbody2D>();
         boxCollider2d = GetComponent<BoxCollider2D>();
+        joint = GetComponent<FixedJoint2D>();
     }
 	
 	// Update is called once per frame
@@ -25,6 +38,14 @@ public class BoatPart : MonoBehaviour {
             {
                 rigidbody2d.AddForceAtPosition(new Vector2(0, -position.y * force), position,ForceMode2D.Force);
             }
+
+            float wavefactor = (Mathf.Sin(Mathf.PI * position.x / 14 + Time.time) + Mathf.Sin(Mathf.PI * position.y / 7 - Time.time))*(Time.time - startTime)/GameData.singleton.TimeGame;
+            rigidbody2d.AddForceAtPosition(new Vector2(0, wavefactor * forceWave), position, ForceMode2D.Force);
+        }
+
+        if(Time.time > timeToBreak)
+        {
+            joint.connectedBody = null;
         }
 	}
 }
