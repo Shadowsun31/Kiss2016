@@ -6,22 +6,25 @@ using System.Collections.Generic;
 public class GameData {
 
     public static GameData singleton = new GameData();
+    public static int PlayerMax = 4;
 
-    public bool[] playerConnected;
+    public int[] playerInput;
     public bool[] playerAlive;
-    public int PlayerMax;
 
     public float TimeGame;
 
     public GameData()
     {
         TimeGame = 60;
-        PlayerMax = 4;
-        playerConnected = new bool[4];
-        playerAlive = new bool[4];
+        playerInput = new int[PlayerMax];
+        playerAlive = new bool[PlayerMax];
+        for (int i = 0;i< PlayerMax; i++)
+        {
+            playerInput[i] = -1;
+        }
 
         playerAlive[0] = true;
-        playerConnected[0] = true;
+        playerInput[0] = 0;
     }
 
 

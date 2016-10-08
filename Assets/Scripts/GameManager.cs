@@ -28,9 +28,9 @@ public class GameManager : MonoBehaviour {
         GameData.singleton.playerAlive[numPlayer] = false;
 
         bool StillPlayerAlive = false;
-        for(int i = 0;i < GameData.singleton.PlayerMax; i++)
+        for(int i = 0;i < GameData.PlayerMax; i++)
         {
-            if(GameData.singleton.playerConnected[i] && GameData.singleton.playerAlive[i])
+            if(GameData.singleton.playerInput[i] != -1 && GameData.singleton.playerAlive[i])
             {
                 StillPlayerAlive = true;
             }
