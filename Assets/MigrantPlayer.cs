@@ -30,7 +30,7 @@ public class MigrantPlayer : Migrant {
             }
         }
 
-        rigidbody2D.AddForce(new Vector2(Input.GetAxisRaw("Joy" + (playerNum + 1) + "_Horizontal"), 0), ForceMode2D.Force);
+        rigidbody2D.AddForce(new Vector2(Input.GetAxisRaw("Joy" + (playerNum + 1) + "_Horizontal")*deplacement, 0), ForceMode2D.Force);
 
     }
 
