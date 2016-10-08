@@ -19,7 +19,6 @@ public class S_ButtonManager : MonoBehaviour
 
     public void Menu_Credits()
     {
-
         m_Credits.SetActive( true );
         m_MainMenu.SetActive( false );
     }
