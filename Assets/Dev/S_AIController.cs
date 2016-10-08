@@ -6,6 +6,8 @@ public class S_AIController : MonoBehaviour {
     public float m_Speed = 5.0f;
     public float m_JumpForce = 500.0f;
 
+    public Transform m_BorderRight, m_BorderLeft;
+
     void Start()
     {
         m_Transform = GetComponent<Transform>();
@@ -16,14 +18,26 @@ public class S_AIController : MonoBehaviour {
 
         m_Time += Time.deltaTime;
 
+        m_DistLeft = m_Transform.position.x - m_BorderLeft.position.x;
+        m_DistRight = m_BorderRight.position.x - m_Transform.position.x;
+
         if( m_MoveTimer <= m_Time )
         {
             m_MoveTimer = m_Time + Random.Range(.5f,2.5f);
-            m_RandX = Random.Range( -1.0f, 1.0f );
+            //m_MoveX = Random.Range( -1.0f, 1.0f );
+
+            if(m_DistLeft > m_DistRight)
+            {
+                m_MoveX = Random.Range( -1.0f, 0 );
+            }
+            else
+            {
+                m_MoveX = Random.Range( 0, 1.0f );
+            }
         }
                 
 
-        float XMovement = m_RandX * m_Speed * Time.deltaTime;
+        float XMovement = m_MoveX * m_Speed * Time.deltaTime;
 
         m_Transform.position = new Vector3( m_Transform.position.x + XMovement, m_Transform.position.y, 0 );
 
@@ -59,7 +73,7 @@ public class S_AIController : MonoBehaviour {
     private Transform m_Transform;
     private Rigidbody2D m_Rb2d;
 
-    private float m_RandX;
+    private float m_MoveX;
     private float m_Time;
 
     private float m_MoveTimer;
@@ -67,4 +81,6 @@ public class S_AIController : MonoBehaviour {
     private bool m_Jump = false;
 
     private bool m_IsGrounded = false;
+
+    private float m_DistLeft, m_DistRight;
 }
