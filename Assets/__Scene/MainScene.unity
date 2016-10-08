@@ -216,6 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerNum: 0
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &126615148 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -3185,9 +3188,9 @@ MonoBehaviour:
   nbrMigrantMin: 15
   nbrMigrantMax: 20
   timeLeftDisplay: {fileID: 406771635}
-  PrefabsMigrant: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
+  PrefabsMigrant: {fileID: 1000010018035554, guid: bafe2d471ef830c48bc240ae5551a5f5,
     type: 2}
-  PrefabsMigrantPlayer: {fileID: 1000012145001432, guid: 44b20b972b0c1e34dbe4f52101fd7182,
+  PrefabsMigrantPlayer: {fileID: 1000010084937254, guid: 8f146e02dc507314ca64cb29737e4738,
     type: 2}
   spawnA: {fileID: 1845397419}
   spawnB: {fileID: 205594378}
