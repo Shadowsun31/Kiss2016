@@ -1,22 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class S_CharacterController : MonoBehaviour {
+public class S_AIController : MonoBehaviour {
 
-    public float m_Speed = 10.0f;
+    public float m_Speed = 5.0f;
     public float m_JumpForce = 500.0f;
 
-	void Start () {
+    void Start()
+    {
         m_Transform = GetComponent<Transform>();
         m_Rb2d = GetComponent<Rigidbody2D>();
-	}
+    }
 
-	void Update () {
-        float XMovement = Input.GetAxis("Horizontal") * m_Speed * Time.deltaTime;
-       
-        m_Transform.position = new Vector3( m_Transform.position.x + XMovement, m_Transform.position.y , 0);
+    void Update () {
 
-        if( m_IsGrounded && Input.GetAxis( "Jump" ) > 0 )
+        m_Time += Time.deltaTime;
+
+        if( m_MoveTimer <= m_Time )
+        {
+            m_MoveTimer = m_Time + Random.Range(.5f,2.5f);
+            m_RandX = Random.Range( -1.0f, 1.0f );
+        }
+                
+
+        float XMovement = m_RandX * m_Speed * Time.deltaTime;
+
+        m_Transform.position = new Vector3( m_Transform.position.x + XMovement, m_Transform.position.y, 0 );
+
+        if( m_IsGrounded && m_Jump )
         {
             Debug.Log( "Jump" );
 
@@ -27,7 +38,7 @@ public class S_CharacterController : MonoBehaviour {
 
     void OnCollisionEnter2D( Collision2D collision )
     {
-       
+
 
         // Collide with Boat
         if( !m_IsGrounded && collision.collider.gameObject.layer == 9 )
@@ -47,6 +58,13 @@ public class S_CharacterController : MonoBehaviour {
 
     private Transform m_Transform;
     private Rigidbody2D m_Rb2d;
+
+    private float m_RandX;
+    private float m_Time;
+
+    private float m_MoveTimer;
+
+    private bool m_Jump = false;
 
     private bool m_IsGrounded = false;
 }
