@@ -727,7 +727,7 @@ MonoBehaviour:
   - {fileID: 21300018, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   rightfootSprite:
   - {fileID: 21300016, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
-  jump: 7.5
+  jump: 6
   deplacement: 12
   rigidbody2D: {fileID: 50000013458614216}
   playerNum: 0

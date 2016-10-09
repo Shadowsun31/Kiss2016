@@ -193,12 +193,74 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 59876796}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.85, y: 9.64, z: 0}
+  m_LocalPosition: {x: -1.22, y: 4.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1422525446}
   m_RootOrder: 5
+--- !u!1 &75050205
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 75050206}
+  - 212: {fileID: 75050207}
+  m_Layer: 0
+  m_Name: Wave-Front
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &75050206
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75050205}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.64, z: 0}
+  m_LocalScale: {x: 1.7741952, y: 1.7741952, z: 1.7741952}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 4
+--- !u!212 &75050207
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 75050205}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -8
+  m_Sprite: {fileID: 21300000, guid: 29de963861243be49a06bd384c17189d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1 &83355928 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012145001432, guid: 44b20b972b0c1e34dbe4f52101fd7182,
@@ -215,11 +277,109 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b9d08784229594468a7e4c1332eb121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNum: 0
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
   jump: 0
   deplacement: 0
-  arrow: {fileID: 0}
   rigidbody2D: {fileID: 0}
+  playerNum: 0
+  arrow: {fileID: 0}
+--- !u!1 &124014587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 124014588}
+  - 212: {fileID: 124014589}
+  - 114: {fileID: 124014590}
+  m_Layer: 0
+  m_Name: CouldRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124014588
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124014587}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.2, y: 11.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 2
+--- !u!212 &124014589
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124014587}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -9
+  m_Sprite: {fileID: 21300000, guid: f39e90478dd50ee48a016200f1046071, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!114 &124014590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 124014587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e61e91f00b02a4b99deebe218ffe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.75
+  amplitude: 0.25
+  decalage: 0.25
+  facteurOvale: 1
 --- !u!1 &126615148 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -236,6 +396,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &132574708 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -252,6 +435,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &147946926 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -268,6 +474,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &165312700
 GameObject:
   m_ObjectHideFlags: 0
@@ -355,6 +584,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!1 &170157981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 170157982}
+  m_Layer: 0
+  m_Name: Decors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &170157982
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 170157981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 802614653}
+  - {fileID: 1652832822}
+  - {fileID: 124014588}
+  - {fileID: 759737153}
+  - {fileID: 75050206}
+  - {fileID: 1585934403}
+  - {fileID: 1694097382}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
 --- !u!1 &205594377
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +641,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 205594377}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.2, y: 3.85, z: 0}
+  m_LocalPosition: {x: 8.53, y: 2.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -399,6 +663,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &243469209
 Prefab:
   m_ObjectHideFlags: 0
@@ -486,6 +773,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &261270567 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -502,6 +812,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &265548293 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -622,6 +955,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &355416098 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -714,6 +1070,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &406771633
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,6 +1305,11 @@ Prefab:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1111521118}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 492716127}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -934,6 +1318,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372,
     type: 2}
   m_PrefabInternal: {fileID: 455724398}
+--- !u!114 &459324874 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1590132676}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1 &468613375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,6 +1438,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!114 &492716127 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1111521117}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!4 &499909926 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -1075,7 +1494,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 500660960}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.45, y: 10.06, z: 0}
+  m_LocalPosition: {x: -7.79, y: 4.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1381,6 +1800,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &536817135
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,6 +1960,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1547500781}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1697946094}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -1592,6 +2044,16 @@ Prefab:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 1590132677}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 952335621}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 459324874}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -1627,7 +2089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550281183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.38, y: 7.51, z: 0}
+  m_LocalPosition: {x: 5.28, y: 3.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1649,6 +2111,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &581218770
 Prefab:
   m_ObjectHideFlags: 0
@@ -1817,6 +2302,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &656148878
 Prefab:
   m_ObjectHideFlags: 0
@@ -1880,6 +2388,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 750997409}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1547500781}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -2022,6 +2540,16 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: -0.0059999945
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 459324874}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1473977007}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -2103,6 +2631,16 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: -0.010000003
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1960008275}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 750997409}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -2138,7 +2676,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 722757939}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9, y: 8.6, z: 0}
+  m_LocalPosition: {x: -11.37, y: 4.37, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -2165,6 +2703,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!114 &750997409 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 2122321729}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!50 &751687056 stripped
 Rigidbody2D:
   m_PrefabParentObject: {fileID: 50000013127163876, guid: b1a1a5edeff2637439ec9f0a507b6372,
@@ -2186,6 +2753,107 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!1 &759737152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 759737153}
+  - 212: {fileID: 759737154}
+  - 114: {fileID: 759737155}
+  m_Layer: 0
+  m_Name: Wave-Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759737153
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759737152}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.39, z: 0}
+  m_LocalScale: {x: 1.5981404, y: 1.5981404, z: 1.5981404}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 3
+--- !u!212 &759737154
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759737152}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -9
+  m_Sprite: {fileID: 21300000, guid: b15a6fe4ff49e514ab85dabacfe89d71, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!114 &759737155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 759737152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e61e91f00b02a4b99deebe218ffe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  amplitude: 1.5
+  decalage: 0
+  facteurOvale: 0.25
 --- !u!1 &769093305 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -2202,6 +2870,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &787101671
 Prefab:
   m_ObjectHideFlags: 0
@@ -2244,6 +2935,68 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3f28bc463ca27b4bbf883b209fbdfdf, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &802614652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 802614653}
+  - 212: {fileID: 802614654}
+  m_Layer: 0
+  m_Name: BackGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802614653
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802614652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 4.88, z: 0}
+  m_LocalScale: {x: 1.7696781, y: 1.7696781, z: 1.7696781}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 0
+--- !u!212 &802614654
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802614652}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -10
+  m_Sprite: {fileID: 21300000, guid: aacbba0d7815ed347ad50fe0dee38a10, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &816180416
 Prefab:
   m_ObjectHideFlags: 0
@@ -2363,6 +3116,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &852703540 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 656148878}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1001 &867240196
 Prefab:
   m_ObjectHideFlags: 0
@@ -2406,7 +3165,7 @@ Prefab:
         type: 2}
       propertyPath: m_ConnectedRigidBody
       value: 
-      objectReference: {fileID: 1104855796}
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011995796152, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
       propertyPath: m_Name
       value: BoatPart (11)
@@ -2414,17 +3173,27 @@ Prefab:
     - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
         type: 2}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.06799997
+      value: 9.8
       objectReference: {fileID: 0}
     - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
         type: 2}
       propertyPath: m_ConnectedAnchor.y
-      value: -0.003999996
+      value: 0.81
       objectReference: {fileID: 0}
     - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
         type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1404930997}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
@@ -2507,6 +3276,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &908670475 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -2654,6 +3446,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &952335621 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1410508678}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!4 &972773955 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -2850,16 +3648,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &1069734877 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
     type: 2}
   m_PrefabInternal: {fileID: 581218770}
---- !u!50 &1104855796 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50000013127163876, guid: b1a1a5edeff2637439ec9f0a507b6372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1927203109}
 --- !u!1001 &1111521117
 Prefab:
   m_ObjectHideFlags: 0
@@ -2922,6 +3738,16 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: 0.001999998
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1969573985}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 952335621}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -3048,7 +3874,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1237603013}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.12, y: 7.87, z: 0}
+  m_LocalPosition: {x: 2.02, y: 4.26, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -3246,6 +4072,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1404930997 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 542152932}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!4 &1405383345 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -3313,6 +4145,16 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: -0.006000006
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 492716127}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1606718711}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -3429,7 +4271,7 @@ MonoBehaviour:
   nbrMigrantMin: 15
   nbrMigrantMax: 20
   timeLeftDisplay: {fileID: 406771635}
-  PrefabsMigrant: {fileID: 1000010018035554, guid: bafe2d471ef830c48bc240ae5551a5f5,
+  PrefabsMigrant: {fileID: 1000012374958972, guid: 1950e7b9dc31e7b4dbaab5fa7bc07dfa,
     type: 2}
   PrefabsMigrantPlayer: {fileID: 1000010084937254, guid: 8f146e02dc507314ca64cb29737e4738,
     type: 2}
@@ -3479,11 +4321,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &1447742180 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
     type: 2}
   m_PrefabInternal: {fileID: 1415460539}
+--- !u!114 &1473977007 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 706463707}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!4 &1486539401 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -3505,6 +4376,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &1515959651
 Prefab:
   m_ObjectHideFlags: 0
@@ -3568,6 +4462,16 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 852703540}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1404930997}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -3626,8 +4530,6 @@ Transform:
   - {fileID: 1515959652}
   - {fileID: 542152933}
   - {fileID: 867240197}
-  - {fileID: 1927203110}
-  - {fileID: 1634955350}
   m_Father: {fileID: 0}
   m_RootOrder: 10
 --- !u!1 &1540650609 stripped
@@ -3646,6 +4548,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!114 &1547500781 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 1515959651}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1 &1558848264
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,6 +4636,91 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!1 &1585934402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1585934403}
+  - 212: {fileID: 1585934404}
+  m_Layer: 0
+  m_Name: LeftCurtain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585934403
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585934402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -12.57, y: 10.31, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 5
+--- !u!212 &1585934404
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585934402}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -9
+  m_Sprite: {fileID: 21300000, guid: 3dae924b82b34e64da6de3fbc9955a5d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!1001 &1590132676
 Prefab:
   m_ObjectHideFlags: 0
@@ -3776,6 +4792,16 @@ Prefab:
       propertyPath: m_ConnectedRigidBody
       value: 
       objectReference: {fileID: 670443080}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1606718711}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 1960008275}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -3805,11 +4831,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &1604837511 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
     type: 2}
   m_PrefabInternal: {fileID: 1880100481}
+--- !u!114 &1606718711 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 549685594}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1001 &1614595663
 Prefab:
   m_ObjectHideFlags: 0
@@ -3881,82 +4936,89 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1634955349
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1522956060}
-    m_Modifications:
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 12.86
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 1111521118}
-    - target: {fileID: 1000011995796152, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_Name
-      value: BoatPart (13)
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: 1.692
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.04000001
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1634955350 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1634955349}
 --- !u!4 &1641166695 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
     type: 2}
   m_PrefabInternal: {fileID: 977230154}
+--- !u!1 &1652832821
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1652832822}
+  - 212: {fileID: 1652832823}
+  - 114: {fileID: 1652832824}
+  m_Layer: 0
+  m_Name: CloudLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1652832822
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652832821}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.5, y: 11.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 1
+--- !u!212 &1652832823
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652832821}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -9
+  m_Sprite: {fileID: 21300000, guid: 910c884a94334ce4eacd21d172ca43a5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!114 &1652832824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1652832821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4e61e91f00b02a4b99deebe218ffe3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  amplitude: 0.25
+  decalage: 0
+  facteurOvale: 1
 --- !u!1 &1658925634 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -3973,11 +5035,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &1691365117 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000012075670792, guid: b0f77432fb35d734fbb7a4e671e3f634,
     type: 2}
   m_PrefabInternal: {fileID: 1732002467}
+--- !u!1 &1694097381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1694097382}
+  - 212: {fileID: 1694097383}
+  m_Layer: 0
+  m_Name: RightCurtain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1694097382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694097381}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 12.62, y: 10.27, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 170157982}
+  m_RootOrder: 6
+--- !u!212 &1694097383
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1694097381}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedWireframeHidden: 1
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: -9
+  m_Sprite: {fileID: 21300000, guid: b32ee491cdd9afe449299a8c661fddc0, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!114 &1697946094 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 867240196}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1 &1703068934
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,7 +5430,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1845397418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.33, y: 3.99, z: 0}
+  m_LocalPosition: {x: -13.26, y: 2.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -4305,7 +5458,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1868702055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.73, y: 8.68, z: 0}
+  m_LocalPosition: {x: -4.45, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -4398,6 +5551,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &1874980126 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -4414,6 +5590,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1001 &1880100481
 Prefab:
   m_ObjectHideFlags: 0
@@ -4485,11 +5684,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
---- !u!50 &1905939948 stripped
-Rigidbody2D:
-  m_PrefabParentObject: {fileID: 50000013127163876, guid: b1a1a5edeff2637439ec9f0a507b6372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1634955349}
 --- !u!1001 &1915642531
 Prefab:
   m_ObjectHideFlags: 0
@@ -4561,77 +5755,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0f77432fb35d734fbb7a4e671e3f634, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &1927203109
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1522956060}
-    m_Modifications:
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 10.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedRigidBody
-      value: 
-      objectReference: {fileID: 1905939948}
-    - target: {fileID: 1000011995796152, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-      propertyPath: m_Name
-      value: BoatPart (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.x
-      value: -0.065999985
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.004000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 255000013047826240, guid: b1a1a5edeff2637439ec9f0a507b6372,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
-  m_IsPrefabParent: 0
---- !u!4 &1927203110 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4000014179362276, guid: b1a1a5edeff2637439ec9f0a507b6372,
-    type: 2}
-  m_PrefabInternal: {fileID: 1927203109}
 --- !u!1 &1930690937 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -4648,6 +5771,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!1 &1938115833 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000012116473336, guid: b0f77432fb35d734fbb7a4e671e3f634,
@@ -4664,6 +5810,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
+--- !u!114 &1960008275 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 670443079}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
+--- !u!114 &1969573985 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+    type: 2}
+  m_PrefabInternal: {fileID: 455724398}
+  m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
 --- !u!1001 &2001537651
 Prefab:
   m_ObjectHideFlags: 0
@@ -4879,6 +6060,16 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: leftBoat
+      value: 
+      objectReference: {fileID: 1473977007}
+    - target: {fileID: 114000012185759714, guid: b1a1a5edeff2637439ec9f0a507b6372,
+        type: 2}
+      propertyPath: rightBoat
+      value: 
+      objectReference: {fileID: 852703540}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1a1a5edeff2637439ec9f0a507b6372, type: 2}
   m_IsPrefabParent: 0
@@ -4979,6 +6170,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9464912d95fa2344b6a5fb26a251969, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  head: {fileID: 0}
+  body: {fileID: 0}
+  leftarm: {fileID: 0}
+  lefthand: {fileID: 0}
+  rightarm: {fileID: 0}
+  righthand: {fileID: 0}
+  leftleg: {fileID: 0}
+  leftfoot: {fileID: 0}
+  rightleg: {fileID: 0}
+  rightfoot: {fileID: 0}
+  headSprite: []
+  bodySprite: []
+  leftarmSprite: []
+  lefthandSprite: []
+  rightarmSprite: []
+  righthandSprite: []
+  leftlegSprite: []
+  leftfootSprite: []
+  rightlegSprite: []
+  rightfootSprite: []
+  jump: 0
+  deplacement: 0
+  rigidbody2D: {fileID: 0}
 --- !u!4 &2139895276 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4000013107750756, guid: 44b20b972b0c1e34dbe4f52101fd7182,

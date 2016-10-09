@@ -152,7 +152,7 @@ GameObject:
   - 212: {fileID: 212000014153472264}
   - 60: {fileID: 60000013618473820}
   m_Layer: 0
-  m_Name: MigrantPlayer 1
+  m_Name: MigrantIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -709,30 +709,40 @@ MonoBehaviour:
   rightfoot: {fileID: 1000010194454274}
   headSprite:
   - {fileID: 21300008, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300006, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   bodySprite:
   - {fileID: 21300000, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300000, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   leftarmSprite:
   - {fileID: 21300002, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300002, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   lefthandSprite:
   - {fileID: 21300004, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300004, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   rightarmSprite:
   - {fileID: 21300010, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300008, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   righthandSprite:
   - {fileID: 21300014, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300012, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   leftlegSprite:
   - {fileID: 21300012, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300010, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   leftfootSprite:
   - {fileID: 21300006, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300024, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   rightlegSprite:
   - {fileID: 21300018, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300016, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
   rightfootSprite:
   - {fileID: 21300016, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
-  jump: 7.5
+  - {fileID: 21300014, guid: bd5ecc9025d0b034da1c97c45f566790, type: 3}
+  jump: 6
   deplacement: 12
   rigidbody2D: {fileID: 50000013000026334}
   BoatLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!212 &212000010370796266
 SpriteRenderer:
   m_ObjectHideFlags: 1

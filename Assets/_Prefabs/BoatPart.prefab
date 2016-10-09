@@ -86,10 +86,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10746c9b0f63a224fae553c15df1cd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftBoat: {fileID: 0}
+  rightBoat: {fileID: 0}
   force: 4
   forceWave: 0.1
-  minTimeToBreak: 10
-  maxTimeToBreak: 90
+  minTimeToBreak: 5
+  maxTimeToBreak: 120
 --- !u!212 &212000013055725966
 SpriteRenderer:
   m_ObjectHideFlags: 1

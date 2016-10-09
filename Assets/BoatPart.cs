@@ -48,7 +48,18 @@ public class BoatPart : MonoBehaviour {
 
         if(Time.time > timeToBreak)
         {
+            joint.enabled = false;
             joint.connectedBody = null;
+            if (rightBoat)
+            {
+                rightBoat.leftBoat = null;
+                if (!rightBoat.rightBoat && !rightBoat.leftBoat)
+                    rightBoat.force = 0;
+            }
+            rightBoat = null;
+
+            if (!rightBoat && !leftBoat)
+                force = 0;
         }
 	}
 }
