@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
         startTime = Time.time;
         pictureTook = false;
         //GameData.singleton.camTexture = new WebCamTexture();
-        GameData.singleton.camTexture.Play();
+        //GameData.singleton.camTexture.Play();
     }
 
     public void playerDie(int numPlayer)
@@ -71,15 +71,22 @@ public class GameManager : MonoBehaviour {
 
         if (!pictureTook)
         {
-            if(Time.time - startTime > 30)
+            if(Time.time - startTime > 15)
             {
                 pictureTook = true;
-                GameData.singleton.camTexture.Pause();
-                //Color32[] pixels = GameData.singleton.camTexture.GetPixels32();
-                //GameData.singleton.webCamShot = new Texture2D(GameData.singleton.camTexture.width, GameData.singleton.camTexture.height);
-                //GameData.singleton.webCamShot.SetPixels32(pixels);
+                //GameData.singleton.camTexture.Play();
+                //GameData.singleton.camTexture.Pause();
+                StartCoroutine(takePicture());
             }
         }
+    }
+
+    public IEnumerator takePicture()
+    {
+        GameData.singleton.camTexture.Play();
+        yield return new WaitForSeconds(0.5f);
+        GameData.singleton.camTexture.Pause();
+
     }
 
     public IEnumerator timerToGameOver()

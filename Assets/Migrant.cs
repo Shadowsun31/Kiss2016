@@ -77,16 +77,16 @@ public class Migrant : MonoBehaviour {
         int bodyIndex = Random.Range(0, bodySprite.Length);
         int legsIndex = Random.Range(0, leftlegSprite.Length);
 
-        head.GetComponent<SpriteRenderer>().sprite = headSprite[headIndex];
-        body.GetComponent<SpriteRenderer>().sprite = bodySprite[bodyIndex];
-        leftarm.GetComponent<SpriteRenderer>().sprite = leftarmSprite[bodyIndex];
-        lefthand.GetComponent<SpriteRenderer>().sprite = lefthandSprite[bodyIndex];
-        rightarm.GetComponent<SpriteRenderer>().sprite = rightarmSprite[bodyIndex];
-        righthand.GetComponent<SpriteRenderer>().sprite = righthandSprite[bodyIndex];
-        leftleg.GetComponent<SpriteRenderer>().sprite = leftlegSprite[legsIndex];
-        leftfoot.GetComponent<SpriteRenderer>().sprite = leftfootSprite[legsIndex];
-        rightleg.GetComponent<SpriteRenderer>().sprite = rightlegSprite[legsIndex];
-        rightfoot.GetComponent<SpriteRenderer>().sprite = rightfootSprite[legsIndex];
+        head.GetComponentInChildren<SpriteRenderer>().sprite = headSprite[headIndex];
+        body.GetComponentInChildren<SpriteRenderer>().sprite = bodySprite[bodyIndex];
+        leftarm.GetComponentInChildren<SpriteRenderer>().sprite = leftarmSprite[bodyIndex];
+        lefthand.GetComponentInChildren<SpriteRenderer>().sprite = lefthandSprite[bodyIndex];
+        rightarm.GetComponentInChildren<SpriteRenderer>().sprite = rightarmSprite[bodyIndex];
+        righthand.GetComponentInChildren<SpriteRenderer>().sprite = righthandSprite[bodyIndex];
+        leftleg.GetComponentInChildren<SpriteRenderer>().sprite = leftlegSprite[legsIndex];
+        leftfoot.GetComponentInChildren<SpriteRenderer>().sprite = leftfootSprite[legsIndex];
+        rightleg.GetComponentInChildren<SpriteRenderer>().sprite = rightlegSprite[legsIndex];
+        rightfoot.GetComponentInChildren<SpriteRenderer>().sprite = rightfootSprite[legsIndex];
 
         GameObject[] bodyParts = new GameObject[] { head, body, leftarm, lefthand, rightarm, righthand, leftleg, leftfoot, rightleg, rightfoot };
         Collider2D[] colliderParts = new Collider2D[bodyParts.Length];
