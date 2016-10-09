@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 59dc6720a8f3dab4d9e9e6b6c8a681a5
-timeCreated: 1476008373
+guid: a4b95f3601f923a43bf1001552bf6cc8
+timeCreated: 1476009788
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: atlas_armL02_340_0
-    21300002: atlas_armL02_340_1
-    21300004: atlas_armL02_340_2
-    21300006: atlas_armL02_340_3
-    21300008: atlas_armL02_340_4
+    21300000: atlas_armR02_340_0
+    21300002: atlas_armR02_340_1
+    21300004: atlas_armR02_340_2
+    21300006: atlas_armR02_340_3
+    21300008: atlas_armR02_340_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -58,7 +58,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: atlas_armL02_340_0
+      name: atlas_armR02_340_0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +71,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: atlas_armL02_340_1
+      name: atlas_armR02_340_1
       rect:
         serializedVersion: 2
         x: 340
@@ -84,7 +84,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: atlas_armL02_340_2
+      name: atlas_armR02_340_2
       rect:
         serializedVersion: 2
         x: 680
@@ -97,7 +97,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: atlas_armL02_340_3
+      name: atlas_armR02_340_3
       rect:
         serializedVersion: 2
         x: 1020
@@ -110,7 +110,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: atlas_armL02_340_4
+      name: atlas_armR02_340_4
       rect:
         serializedVersion: 2
         x: 1360
