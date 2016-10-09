@@ -302,6 +302,7 @@ MonoBehaviour:
   rigidbody2D: {fileID: 0}
   playerNum: 0
   arrow: {fileID: 0}
+  SeuilPushSound: 0.25
 --- !u!1 &124014587
 GameObject:
   m_ObjectHideFlags: 0
@@ -4289,7 +4290,7 @@ MonoBehaviour:
   nbrMigrantMin: 15
   nbrMigrantMax: 20
   timeLeftDisplay: {fileID: 406771635}
-  PrefabsMigrant: {fileID: 1000012374958972, guid: 1950e7b9dc31e7b4dbaab5fa7bc07dfa,
+  PrefabsMigrant: {fileID: 1000012038047714, guid: 1950e7b9dc31e7b4dbaab5fa7bc07dfa,
     type: 2}
   PrefabsMigrantPlayer: {fileID: 1000010084937254, guid: 8f146e02dc507314ca64cb29737e4738,
     type: 2}
