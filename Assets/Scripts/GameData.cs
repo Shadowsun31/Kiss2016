@@ -15,6 +15,9 @@ public class GameData {
     public int nbrDeadMigrant;
     public int nbrMigrantTotal;
 
+    public Texture2D webCamShot;
+
+    public WebCamTexture camTexture;
 
     public float TimeGame;
 
@@ -45,6 +48,7 @@ public class GameData {
 
         playerInput[0] = 0;
         playerAlive[0] = true;
+        camTexture = new WebCamTexture();
     }
 
     public void ResetGameData()
