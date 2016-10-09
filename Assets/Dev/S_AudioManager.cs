@@ -3,7 +3,14 @@ using System.Collections;
 
 public class S_AudioManager : MonoBehaviour {
 
+    public static S_AudioManager singleton;
+
     public AudioSource[] m_Screams, m_Ploufs, m_Pushs;
+
+    void Awake()
+    {
+        singleton = this;
+    }
 
 	public void PlayScream()
     {

@@ -10,6 +10,7 @@ public class MigrantPlayer : Migrant {
     [SerializeField]
     private SpriteRenderer arrow;
 
+    private bool isDead = false;
 
     public override void Start()
     {
@@ -53,5 +54,14 @@ public class MigrantPlayer : Migrant {
     {
         base.Die();
         GameManager.singleton.playerDie(playerNum);
+        if( !isDead )
+        {
+            isDead = true;
+            S_AudioManager.singleton.PlayScream();
+        }
+          
+        
+
+        
     }
 }
