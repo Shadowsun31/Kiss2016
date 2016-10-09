@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Migrant : MonoBehaviour {
+public class Migrant : MonoBehaviour
+{
 
-    
+
     public GameObject head;
     public GameObject body;
     public GameObject leftarm;
@@ -42,29 +43,29 @@ public class Migrant : MonoBehaviour {
     private new Rigidbody2D rigidbody2D;
 
     private bool isJumping = false;
-    
+
 
 
     public virtual void Update()
     {
 
-        if (pressJump)
+        if( pressJump )
         {
-            if (!isJumping)
+            if( !isJumping )
             {
                 isJumping = true;
-                StartCoroutine(jumpIenum());
+                StartCoroutine( jumpIenum() );
             }
         }
 
-        rigidbody2D.AddForce(new Vector2(direction * deplacement, 0), ForceMode2D.Force);
+        rigidbody2D.AddForce( new Vector2( direction * deplacement, 0 ), ForceMode2D.Force );
 
     }
 
     public IEnumerator jumpIenum()
     {
-        rigidbody2D.AddForce(new Vector2(0, jump), ForceMode2D.Impulse);
-        yield return new WaitForSeconds(1);
+        rigidbody2D.AddForce( new Vector2( 0, jump ), ForceMode2D.Impulse );
+        yield return new WaitForSeconds( 1 );
         isJumping = false;
 
     }
@@ -77,28 +78,28 @@ public class Migrant : MonoBehaviour {
         int bodyIndex = Random.Range(0, bodySprite.Length);
         int legsIndex = Random.Range(0, leftlegSprite.Length);
 
-        head.GetComponent<SpriteRenderer>().sprite = headSprite[headIndex];
-        body.GetComponent<SpriteRenderer>().sprite = bodySprite[bodyIndex];
-        leftarm.GetComponent<SpriteRenderer>().sprite = leftarmSprite[bodyIndex];
-        lefthand.GetComponent<SpriteRenderer>().sprite = lefthandSprite[bodyIndex];
-        rightarm.GetComponent<SpriteRenderer>().sprite = rightarmSprite[bodyIndex];
-        righthand.GetComponent<SpriteRenderer>().sprite = righthandSprite[bodyIndex];
-        leftleg.GetComponent<SpriteRenderer>().sprite = leftlegSprite[legsIndex];
-        leftfoot.GetComponent<SpriteRenderer>().sprite = leftfootSprite[legsIndex];
-        rightleg.GetComponent<SpriteRenderer>().sprite = rightlegSprite[legsIndex];
-        rightfoot.GetComponent<SpriteRenderer>().sprite = rightfootSprite[legsIndex];
+        head.GetComponent<SpriteRenderer>().sprite = headSprite[ headIndex ];
+        body.GetComponent<SpriteRenderer>().sprite = bodySprite[ bodyIndex ];
+        leftarm.GetComponent<SpriteRenderer>().sprite = leftarmSprite[ bodyIndex ];
+        lefthand.GetComponent<SpriteRenderer>().sprite = lefthandSprite[ bodyIndex ];
+        rightarm.GetComponent<SpriteRenderer>().sprite = rightarmSprite[ bodyIndex ];
+        righthand.GetComponent<SpriteRenderer>().sprite = righthandSprite[ bodyIndex ];
+        leftleg.GetComponent<SpriteRenderer>().sprite = leftlegSprite[ legsIndex ];
+        leftfoot.GetComponent<SpriteRenderer>().sprite = leftfootSprite[ legsIndex ];
+        rightleg.GetComponent<SpriteRenderer>().sprite = rightlegSprite[ legsIndex ];
+        rightfoot.GetComponent<SpriteRenderer>().sprite = rightfootSprite[ legsIndex ];
 
         GameObject[] bodyParts = new GameObject[] { head, body, leftarm, lefthand, rightarm, righthand, leftleg, leftfoot, rightleg, rightfoot };
         Collider2D[] colliderParts = new Collider2D[bodyParts.Length];
-        for (int i = 0; i < bodyParts.Length; i++)
+        for( int i = 0; i < bodyParts.Length; i++ )
         {
-            colliderParts[i] = bodyParts[i].GetComponent<Collider2D>();
+            colliderParts[ i ] = bodyParts[ i ].GetComponent<Collider2D>();
         }
-        for (int i = 0;i< bodyParts.Length; i++)
+        for( int i = 0; i < bodyParts.Length; i++ )
         {
-            for(int j = i+1;j < bodyParts.Length; j++)
+            for( int j = i + 1; j < bodyParts.Length; j++ )
             {
-                Physics2D.IgnoreCollision(colliderParts[i], colliderParts[j]);
+                Physics2D.IgnoreCollision( colliderParts[ i ], colliderParts[ j ] );
             }
         }
 
@@ -112,6 +113,9 @@ public class Migrant : MonoBehaviour {
             plouf = true;
             S_AudioManager.singleton.PlayPlouf();
         }
-       
+
     }
+
+   
+
 }

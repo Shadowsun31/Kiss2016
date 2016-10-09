@@ -6,11 +6,12 @@ public class MigrantPlayer : Migrant {
     [SerializeField]
     private int playerNum;
 
-
     [SerializeField]
     private SpriteRenderer arrow;
 
     private bool isDead = false;
+
+    public float SeuilPushSound = 0.25f;
 
     public override void Start()
     {
@@ -60,8 +61,12 @@ public class MigrantPlayer : Migrant {
             S_AudioManager.singleton.PlayScream();
         }
           
-        
+    }
 
-        
+    void OnCollisionEnter2D( Collision2D collision )
+    {
+
+        if( collision.relativeVelocity.magnitude > SeuilPushSound )
+            S_AudioManager.singleton.PlayPush();
     }
 }
