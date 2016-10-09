@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 47efdd23b51493b40baf1ed15755300a
-timeCreated: 1476010035
+guid: 0b67c9adad159e943822b0fce9590dc4
+timeCreated: 1476010062
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Menu_0
-    21300002: Menu_1
-    21300004: Menu_2
+    21300000: Menu Game Over_0
+    21300002: Menu Game Over_1
+    21300004: Menu Game Over_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,7 +56,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Menu_0
+      name: Menu Game Over_0
       rect:
         serializedVersion: 2
         x: 0
@@ -69,7 +69,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu_1
+      name: Menu Game Over_1
       rect:
         serializedVersion: 2
         x: 0
@@ -82,7 +82,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Menu_2
+      name: Menu Game Over_2
       rect:
         serializedVersion: 2
         x: 0
