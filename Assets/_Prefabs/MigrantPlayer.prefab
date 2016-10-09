@@ -328,7 +328,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010084937254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3786888, y: 4.608758, z: 0}
+  m_LocalPosition: {x: -0.42, y: 4.608758, z: 0}
   m_LocalScale: {x: 0.18636909, y: 0.18636909, z: 0.18636909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -708,25 +708,25 @@ MonoBehaviour:
   rightleg: {fileID: 1000012665645046}
   rightfoot: {fileID: 1000012161825872}
   headSprite:
-  - {fileID: 21300008, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300012, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   bodySprite:
-  - {fileID: 21300000, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300000, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   leftarmSprite:
-  - {fileID: 21300002, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300002, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   lefthandSprite:
-  - {fileID: 21300004, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300006, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   rightarmSprite:
-  - {fileID: 21300010, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300014, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   righthandSprite:
-  - {fileID: 21300014, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300018, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   leftlegSprite:
-  - {fileID: 21300012, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300016, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   leftfootSprite:
-  - {fileID: 21300006, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300010, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   rightlegSprite:
-  - {fileID: 21300018, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300022, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   rightfootSprite:
-  - {fileID: 21300016, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
+  - {fileID: 21300020, guid: 978bc8b5c78071043aaa4f51c2ef612b, type: 3}
   jump: 6
   deplacement: 12
   rigidbody2D: {fileID: 50000013458614216}
@@ -760,7 +760,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300014, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -793,7 +793,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300010, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -826,7 +826,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300004, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -859,7 +859,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300018, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -925,7 +925,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 6
   m_Sprite: {fileID: 21300002, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -958,7 +958,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300008, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -991,7 +991,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300016, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1024,7 +1024,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300012, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1057,7 +1057,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1090,7 +1090,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300006, guid: 8dbcc4ff7833b0848848bb8b413353e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1109,7 +1109,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.1133616, y: 0.4696775}
-  m_ConnectedAnchor: {x: 0.7466387, y: 0.6526793}
+  m_ConnectedAnchor: {x: 0.7466384, y: 0.6526793}
   m_DampingRatio: 0.1
   m_Frequency: 0.01
 --- !u!255 &255000010309839588
@@ -1126,7 +1126,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.16476154, y: 0.7319109}
-  m_ConnectedAnchor: {x: -0.21523915, y: -0.51608783}
+  m_ConnectedAnchor: {x: -0.21523851, y: -0.51608783}
   m_DampingRatio: 0.8
   m_Frequency: 20
 --- !u!255 &255000011057212884
@@ -1143,7 +1143,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.13963342, y: 0.7539791}
-  m_ConnectedAnchor: {x: 0.12936608, y: -0.46802267}
+  m_ConnectedAnchor: {x: 0.12936649, y: -0.46802267}
   m_DampingRatio: 0.1
   m_Frequency: 0.01
 --- !u!255 &255000011380860978
@@ -1160,7 +1160,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.3094833, y: 0.5964664}
-  m_ConnectedAnchor: {x: 0.16951634, y: -1.3345314}
+  m_ConnectedAnchor: {x: 0.16951683, y: -1.3345314}
   m_DampingRatio: 0.8
   m_Frequency: 20
 --- !u!255 &255000011904154746
@@ -1177,7 +1177,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.3906362, y: -1.828984}
-  m_ConnectedAnchor: {x: -0.0393635, y: 1.1710161}
+  m_ConnectedAnchor: {x: -0.03936382, y: 1.1710161}
   m_DampingRatio: 0.5
   m_Frequency: 2
 --- !u!255 &255000012758745128
@@ -1194,7 +1194,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.17952895, y: 0.53277504}
-  m_ConnectedAnchor: {x: -0.5304708, y: 0.6327737}
+  m_ConnectedAnchor: {x: -0.53047097, y: 0.6327737}
   m_DampingRatio: 0.1
   m_Frequency: 0.01
 --- !u!255 &255000013054740198
@@ -1211,7 +1211,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0.33426666, y: 0.7247646}
-  m_ConnectedAnchor: {x: -0.23173422, y: -0.40223432}
+  m_ConnectedAnchor: {x: -0.23173326, y: -0.40223432}
   m_DampingRatio: 0.1
   m_Frequency: 0.01
 --- !u!255 &255000013394316728
@@ -1228,7 +1228,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.09616399, y: 0.8599953}
-  m_ConnectedAnchor: {x: 0.15883562, y: -0.40100622}
+  m_ConnectedAnchor: {x: 0.15883595, y: -0.40100622}
   m_DampingRatio: 0.8
   m_Frequency: 20
 --- !u!255 &255000014266753914
