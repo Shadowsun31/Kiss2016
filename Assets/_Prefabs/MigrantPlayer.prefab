@@ -1057,8 +1057,8 @@ MonoBehaviour:
   - {fileID: 21300004, guid: 34c8e41b395f0524eb6e72a9caef3bc6, type: 3}
   - {fileID: 21300006, guid: 34c8e41b395f0524eb6e72a9caef3bc6, type: 3}
   - {fileID: 21300008, guid: 34c8e41b395f0524eb6e72a9caef3bc6, type: 3}
-  jump: 6
-  deplacement: 12
+  jump: 6.5
+  deplacement: 500
   rigidbody2D: {fileID: 50000013458614216}
   playerNum: 0
   arrow: {fileID: 212000011813642838}

@@ -35,7 +35,7 @@ public class Migrant : MonoBehaviour {
     private float jump;
 
     [SerializeField]
-    private float deplacement;
+    protected float deplacement;
 
 
     [SerializeField]
@@ -57,7 +57,7 @@ public class Migrant : MonoBehaviour {
             }
         }
 
-        rigidbody2D.AddForce(new Vector2(direction * deplacement, 0), ForceMode2D.Force);
+        rigidbody2D.AddForce(new Vector2(direction * deplacement * Time.deltaTime, 0), ForceMode2D.Force);
 
     }
 
