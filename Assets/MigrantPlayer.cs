@@ -25,6 +25,7 @@ public class MigrantPlayer : Migrant {
         direction = Input.GetAxisRaw("Joy" + (playerNum + 1) + "_Horizontal");
 
         base.Update();
+
     }
 
 
