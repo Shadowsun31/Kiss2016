@@ -10,8 +10,15 @@ public class S_ButtonManager : MonoBehaviour
 
     public Button m_StartGameButton;
 
+    public string textJoin = "Press A to leave your home";
 
     public Text[] m_Texts;
+
+    public GameObject prefabPlayer;
+
+    public Transform[] spawnPlayer;
+
+    private GameObject[] currentPlayer;
 
 
     #region MainMenu
@@ -41,11 +48,15 @@ public class S_ButtonManager : MonoBehaviour
         for(int i = 0;i< GameData.PlayerMax;i++ )
         {
             GameData.singleton.playerInput[ i ] = -1;
+            m_Texts[i].text = textJoin;
         }
-       
-    }
 
-    void Update()
+        currentPlayer = new GameObject[4];
+
+
+}
+
+void Update()
     {
         if( m_SelectPlayer.activeInHierarchy )
         {
@@ -57,13 +68,23 @@ public class S_ButtonManager : MonoBehaviour
 
             }
 
-            for( int i = 0; i < 4; i++ )
+            for (int i = 0; i < 4; i++)
             {
-                if( Input.GetButtonDown( "Joy" + ( i + 1 ) + "_ButA" ) )
+                if (GameData.singleton.playerInput[i] != i  &&Input.GetButtonDown("Joy" + (i + 1) + "_ButA"))
                 {
                     GameData.singleton.playerInput[i] = i;
-                    
-                    m_Texts[ i ].text = "Player" + ( i + 1 );
+
+                    m_Texts[i].text = "Player" + (i + 1);
+
+                    currentPlayer[i] = (GameObject) Instantiate(prefabPlayer, spawnPlayer[i].position, Quaternion.identity);
+                    currentPlayer[i].GetComponent<MigrantPlayer>().SetNumPlayer(i);
+                }
+                else if(GameData.singleton.playerInput[i] == i && Input.GetButtonDown("Joy" + (i + 1) + "_ButB"))
+                {
+                    Destroy(currentPlayer[i]);
+                    m_Texts[i].text = textJoin;
+                    GameData.singleton.playerInput[i] = -1;
+
                 }
             }
             

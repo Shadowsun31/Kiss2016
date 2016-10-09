@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour {
     public void Update()
     {
         float timeLeft = GameData.singleton.TimeGame - (Time.time - startTime);
-        timeLeftDisplay.text = ""+timeLeft;
+        timeLeftDisplay.text = "Time Left : "+timeLeft.ToString("00");
 
         if (!pictureTook)
         {
@@ -84,7 +84,7 @@ public class GameManager : MonoBehaviour {
     public IEnumerator takePicture()
     {
         GameData.singleton.camTexture.Play();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(2f);
         GameData.singleton.camTexture.Pause();
 
     }
