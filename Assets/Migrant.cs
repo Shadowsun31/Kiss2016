@@ -29,7 +29,7 @@ public class Migrant : MonoBehaviour {
     protected bool pressJump = false;
     protected float direction = 0;
 
-    protected bool isDead = false;
+    private bool plouf = false;
 
     [SerializeField]
     private float jump;
@@ -107,9 +107,9 @@ public class Migrant : MonoBehaviour {
     public virtual void Die()
     {
         GameData.singleton.nbrDeadMigrant++;
-        if( !isDead )
+        if( !plouf )
         {
-            isDead = true;
+            plouf = true;
             S_AudioManager.singleton.PlayPlouf();
         }
        
