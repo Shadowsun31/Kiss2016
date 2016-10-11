@@ -8,6 +8,8 @@ public class S_ButtonManager : MonoBehaviour
     public string nextScene;
     public GameObject m_MainMenu, m_SelectPlayer, m_Credits;
 
+    public GameObject creditMigrant;
+
     public Button m_StartGameButton;
 
     public string textJoin = "Press A to leave your home";
@@ -32,6 +34,7 @@ public class S_ButtonManager : MonoBehaviour
     public void Menu_Credits()
     {
         m_Credits.SetActive( true );
+        creditMigrant.SetActive( true );
         m_MainMenu.SetActive( false );
     }
 
@@ -101,6 +104,7 @@ void Update()
             if( Input.GetButtonDown( "Cancel" ) )
             {
                 m_Credits.SetActive( false );
+                creditMigrant.SetActive( false );
                 m_MainMenu.SetActive( true );
                 m_StartGameButton.Select();
                            
